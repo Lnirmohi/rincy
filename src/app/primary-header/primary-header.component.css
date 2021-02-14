@@ -1,50 +1,42 @@
 .primary-navbar {
-  background-image: linear-gradient(to right, #A6C0FE, #F68084);
+  background-image: linear-gradient(to right, #A6C0FE , #F68084);
   justify-content: space-between;
   padding-top: 1em;
   padding-bottom: 1em;
 }
 
-.primary-navbar__social-medias,
-.primary-navbar__menu {
+nav a + a {
   color: white;
-}
-
-.primary-navbar__social-medias li+li {
-  margin-left: 2em;
-}
-
-.primary-navbar__menu li+li {
   margin-left: 2em;
 }
 
 @media screen and (max-width: 630px) {
-
+  
   html {
     font-size: 1.375em;
   }
-
+  
   .primary-navbar {
     flex-direction: column;
     justify-content: center;
   }
-
+  
   .primary-navbar__social-medias {
     justify-content: center;
-
+    
     font-size: 1.3rem;
     margin-bottom: 1rem;
   }
-
+  
   .primary-navbar__menu {
     flex-direction: column;
     align-items: center;
-
+    
     font-size: 1.5rem;
     font-weight: 600;
   }
-
-  .primary-navbar__menu li+li {
+  
+  .primary-navbar__menu a + a {
     margin-left: 0;
     margin-top: 0.3rem;
   }
