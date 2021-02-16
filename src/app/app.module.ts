@@ -7,6 +7,7 @@ import { PrimaryHeaderComponent } from './primary-header/primary-header.componen
 import { MainHeaderComponent } from './main-header/main-header.component';
 import { NavMenuComponent } from './nav-menu/nav-menu.component';
 import { FooterComponent } from './footer/footer.component';
+import { MobileNavbarComponent } from './mobile-navbar/mobile-navbar.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,8 @@ import { FooterComponent } from './footer/footer.component';
     PrimaryHeaderComponent,
     MainHeaderComponent,
     NavMenuComponent,
-    FooterComponent
+    FooterComponent,
+    MobileNavbarComponent
   ],
   imports: [
     BrowserModule,
