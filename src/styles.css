@@ -77,3 +77,7 @@ body {
 .center {
   justify-content: center;
 }
+
+.hidden {
+  display: none;
+}
