@@ -1,4 +1,7 @@
 .main-navbar {
+  display: flex;
+
+
   padding-top: 0.6em;
   padding-bottom: 0.6em;
   justify-content: space-between;
@@ -25,6 +28,8 @@
 }
 
 .main-navbar__menu {
+  display: flex;
+  flex-direction: column;
   justify-content: center;
 }
 
