@@ -1,12 +1,16 @@
-/* Footer */
-
 .footer {
+  display: flex;
+  justify-content: center;
+  
   background-color: #5B5B5B;
   padding: 1rem;
   color: white;
 }
 
 .footer-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   max-width: 240px;
 }
 
@@ -23,7 +27,7 @@
   font-weight: 600;
 }
 
-.footer-nav a+a {
+.footer-nav a + a {
   margin-left: 1em;
 }
 
@@ -32,8 +36,18 @@
   font-size: 36px;
 }
 
+.footer-nav__social-media {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
 .footer-nav__menu {
-  font-size: 22px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  
+  font-size: 0.9rem;
 }
 
 .footer-nav__menu a {
@@ -42,6 +56,6 @@
 }
 
 .copyright {
-  font-size: 14px;
+  font-size: 0.7rem;
   align-self: center;
 }
