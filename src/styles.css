@@ -7,6 +7,26 @@
   vertical-align: baseline;
 }
 
+/* -------------------- */
+/* Variables */
+/* -------------------- */
+
+:root {
+  --hero--bg-color: #EDEDED;
+  --content-min-width: 320px;
+  
+  --section-title-font-size: 1.5rem;
+  --section-title-font-weight: bolder;
+  
+  --section-detail-font-size: 1rem;
+  --section-detail-margin: 0.6rem 0 1.5rem;
+  
+  --sub-section-title-font-size: 1.2rem;
+  --sub-section-title-font-weight: bold;
+  
+  --sub-section-detail-font-size: 0.8rem;
+}
+
 a {
   outline: none;
   color: white;
@@ -35,8 +55,8 @@ li {
 html {
   background-color: #f7f7f7;
   color: #000;
-  font-family: Noto Serif, serif;
-  font-size: 20px;
+  font-family: Poppins, Noto Serif, serif;
+  font-size: 21px;
   font-weight: 400;
   line-height: 1.5;
 }
@@ -48,36 +68,31 @@ body {
   font-size: 1em;
   min-height: 100%;
   overflow-x: hidden;
-}
-
-.flex {
-  display: flex;
-}
-
-.row {
-  flex-direction: row;
-}
-
-.col {
-  flex-direction: column;
+  letter-spacing: 1.2px;
 }
 
 .common-padding {
-  padding: 0 3em;
-}
-
-.common-mobile-padding {
-  padding: 1em;
-}
-
-.space-between {
-  justify-content: space-between;
-}
-
-.center {
-  justify-content: center;
+   padding: 1rem;
 }
 
 .hidden {
   display: none;
+}
+
+.artist-credit-text {
+  position: absolute;
+  visibility: hidden;
+  
+  padding: 6px 8px;
+  border-radius: 6px;
+  
+  bottom: -10px;
+  background-color: blueviolet;
+  color: white;
+  font-size: 12px;
+  text-align: center;
+}
+
+figure:hover .artist-credit-text {
+  visibility: visible;
 }
