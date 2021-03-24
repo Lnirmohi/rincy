@@ -1,0 +1,134 @@
+#navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  display: block;
+  transition: top 0.3s;
+}
+
+.main-navbar {
+  display: flex;
+  justify-content: space-between;
+
+  padding-top: 0.6em;
+  padding-bottom: 0.6em;
+  border-bottom: 0.4px solid black;
+
+  background-color: #FAFAFA;
+  min-width: 360px;
+}
+
+.logo-container {
+  color: black;
+}
+
+.logo-container:hover {
+  border-bottom: none;
+}
+
+.logo {
+  font-size: 1.6rem;
+  font-weight: 600;
+}
+
+.logo-subtitle {
+  font-size: 0.9rem;
+  text-align: center;
+}
+
+.main-navbar__menu {
+  position: relative;
+}
+
+.menu-btn {
+  background-color: wheat;
+  padding: 12px 14px;
+}
+
+.main-navbar__menu__item {
+  position: absolute;
+  visibility: hidden;
+
+  display: flex;
+  flex-direction: column;
+
+  /*   font-size: calc(100%/4); */
+  background-color: white;
+  width: 200px;
+
+  padding: 12px 14px;
+  border-radius: 14px;
+
+  transform: translatex(-72%);
+}
+
+.menu-btn {
+  cursor: pointer;
+}
+
+.menu-btn:hover {
+  color: white;
+}
+
+.main-navbar__menu:hover .main-navbar__menu__item {
+  visibility: visible;
+}
+
+.main-navbar__menu__item a {
+  margin-bottom: 0.6em;
+
+  color: black;
+  font-size: 0.8rem;
+}
+
+.main-navbar__menu__item a:hover {
+  transition: 0.2s ease-out;
+  padding-left: 4px;
+  border-radius: 4px;
+
+  background-color: black;
+  color: white;
+}
+
+.primary-navbar__menu {
+  display: flex;
+  justify-content: space-evenly;
+
+  background-color: black;
+  min-width: 360px;
+  height: 36px;
+}
+
+.primary-navbar__menu a {
+  font-size: 0.9rem;
+  margin-bottom: 5px;
+}
+
+@media only screen and (min-width: 980px) {
+
+  .menu-btn {
+    display: none;
+  }
+
+  .main-navbar__menu__item {
+    position: relative;
+    visibility: visible;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    background-color: inherit;
+    width: 100%;
+
+    transform: translatex(0);
+  }
+
+  .main-navbar__menu__item a {
+    font-size: 1.8vw;
+  }
+
+  .main-navbar__menu__item a+a {
+    margin-left: 2.5vw;
+  }
+}
