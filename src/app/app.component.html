@@ -1,7 +1,3 @@
-<header>
-    <app-primary-header *ngIf="!displayMobileNavbar"></app-primary-header>
-    <app-main-header *ngIf="!displayMobileNavbar"></app-main-header>
-    
-    <app-mobile-navbar *ngIf="displayMobileNavbar"></app-mobile-navbar>
-</header>
+<app-header></app-header>
+<router-outlet></router-outlet>
 <app-footer></app-footer>
